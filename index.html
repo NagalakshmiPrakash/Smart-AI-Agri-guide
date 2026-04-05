@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AgriSmart AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌾 AgriSmart AI</h1>
+
+<div class="card">
+  <h2>Crop Guidance</h2>
+  <input id="crop" placeholder="Crop">
+  <input id="soil" placeholder="Soil Type">
+  <button onclick="getAdvice()">Get Advice</button>
+  <p id="output"></p>
+</div>
+
+<div class="card">
+  <h2>Weather Alerts</h2>
+  <button onclick="getWeather()">Get Weather</button>
+  <p id="weather"></p>
+</div>
+
+<div class="card">
+  <h2>Disease Detection</h2>
+  <input type="file">
+  <button onclick="detectDisease()">Analyze</button>
+  <p id="disease"></p>
+</div>
+
+<div class="card">
+  <h2>Market Prices</h2>
+  <button onclick="getMarket()">Check Prices</button>
+  <ul id="market"></ul>
+</div>
+
+<script src="app.js"></script>
+<script src="speech.js"></script>
+
+</body>
+</html>
